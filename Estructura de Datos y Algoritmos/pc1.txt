@@ -1,0 +1,123 @@
+package programas;
+
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.Stack;
+import java.util.Queue;
+import java.util.LinkedList;
+
+public class pc1 {
+
+    public static int parteA(int numero, int digito){
+        int contador = 0;
+        int residuo;
+        int cociente;
+
+        while (numero > 0){
+            residuo = numero % 10;
+            cociente = numero / 10;
+
+            if (residuo == digito) contador++;
+
+            numero = cociente;
+        }
+
+        return contador;
+    }
+
+    public static boolean parteB(int numero){
+        int digito4 = parteA(numero, 4);
+        int digito7 = parteA(numero, 7);
+
+        if (digito4 >= 3 || digito7 >= 2)
+            return true;
+        else
+            return false;
+    }
+
+    public static void pregunta1(){
+        int cantidad = parteA(4351467, 4);
+        System.out.println(cantidad);
+        boolean resultado = parteB(4351467);
+        System.out.println(resultado);
+    }
+
+    public static int parteC(double[] montoVenta){
+        int contador = 0;
+
+        for (int i=0; i<montoVenta.length; i++){
+            if (montoVenta[i]<400)
+                contador += 1;
+        }
+        return contador;
+    }
+
+    public static int parteD(String[] codCliente, String cliente){
+        int contador = 0;
+        for (int i=0; i<codCliente.length; i++){
+            if (codCliente[i].equals(cliente))
+                contador ++;
+        }
+        return contador;
+    }
+
+    public static void pregunta2(){
+        String[] codCliente = {"C1", "C2", "C3", "C4", "C5"};
+        double[] montoVenta = {100, 200, 300, 400, 500};
+        String[] estadoVenta = {"Pag", "Pag", "PP", "PP", "Pag"};
+
+        int contador = parteC(montoVenta);
+        System.out.println(contador);
+        int cantidad = parteD(codCliente, "C1");
+        System.out.println(cantidad);
+    }
+
+    public static void pilas_colas(){
+        Stack pila = new Stack();
+
+        pila.push("Laptop");
+        pila.push("pc");
+        pila.push("monitor");
+        pila.push("mouse");
+
+        System.out.println(pila.peek());
+        pila.pop();
+
+        System.out.println(pila.peek());
+
+        if (pila.empty()) System.out.println("VacÃ­o");
+        else System.out.println("Lleno");
+
+        System.out.println(pila.size());
+
+        System.out.println(pila.search("monitor"));
+        System.out.println(pila.search("Laptop"));
+
+        pila.push("Parlante");
+
+        System.out.println(pila.search("Laptop"));
+
+        System.out.println(pila.firstElement());
+
+        Queue cola = new LinkedList();
+        cola.add("pc");
+        cola.add("laptop");
+        cola.add("teclado");
+        cola.add("mouse");
+
+        if (cola.isEmpty() == true) System.out.println("Cola vacÃ­a");
+        else System.out.println("Cola no vacÃ­a");
+
+        cola.remove();
+
+        System.out.println(cola);
+    }
+
+    public static void main(String[] args ){
+        pregunta1();
+        pregunta2();
+
+        pilas_colas();
+    }
+
+}

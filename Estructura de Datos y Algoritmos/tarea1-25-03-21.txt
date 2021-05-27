@@ -1,0 +1,32 @@
+public class Main {
+    public static void vendeAlambre(int cantAlambre){
+
+        int a500,a300,a75,resto;
+         a500 = cantAlambre / 500;
+         resto = cantAlambre % 500;
+
+         a300 = resto / 300;
+         resto = resto % 300;
+
+         a75 = resto / 75;
+        resto = resto % 75;
+        System.out.printf("Hola, para %d pies se requiere:\n",cantAlambre);
+        System.out.printf("%d rollos de 500 pies \n",a500);
+        System.out.printf("%d rollos de 300 pies \n",a300);
+        System.out.printf("%d rollos de 75 pies \n",a75);
+        System.out.printf("Sobrando %d pies \n",resto);
+    }
+    public static void gananciaVendedor(double totalventasemanal){
+        if (totalventasemanal > 0){
+            double operacion = 200 + totalventasemanal*0.09;
+            System.out.printf("El total de su ganancia semanal es S/.%.2f : \n",operacion);
+        }
+
+    }
+    public static void main(String[] args) {
+
+        vendeAlambre(1575);
+        gananciaVendedor(500);
+
+    }
+}

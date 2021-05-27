@@ -1,0 +1,103 @@
+public static String getYear(int mes){
+        String mesNombre="";
+        if(mes == 0){
+            mesNombre="Enero";
+        }else if(mes == 1){
+            mesNombre="Febrero";
+        }else if(mes == 2){
+            mesNombre="Marzo";
+        }else if(mes == 3){
+            mesNombre="Abril";
+        }else if(mes == 4){
+            mesNombre="Mayo";
+        }else if(mes == 5){
+            mesNombre="Junio";
+        }else if(mes == 6){
+            mesNombre="Julio";
+        }else if(mes == 7){
+            mesNombre="Agosto";
+        }else if(mes == 8){
+            mesNombre="Setiembre";
+        }else if(mes == 9){
+            mesNombre="Octubre";
+        }else if(mes == 10){
+            mesNombre="Noviembre";
+        }else if(mes == 11){
+            mesNombre="Diciembre";
+        }
+        return mesNombre;
+    }
+    public static void ventasTV(double[] TVxmes){
+        double SumaPromedio = 0, Promedio;
+        double mayor = TVxmes[0],menor = TVxmes[0];
+        int mesMayor = 0  ,mesMenor = 0, contadorSuperiorPromedio=0;
+
+        for(int i=0;i<TVxmes.length;i++)
+        {
+             SumaPromedio = SumaPromedio + TVxmes[i];
+            if (TVxmes[i] > mayor) {
+                mayor = TVxmes[i];
+                mesMayor = i;
+            }else if (TVxmes[i] < menor) {
+                menor = TVxmes[i];
+                mesMenor = i;
+            }
+
+        }
+
+        Promedio = SumaPromedio/TVxmes.length;
+
+        System.out.println("Promedio de ventas en el año: " + Promedio);
+        System.out.println("El mes de mayor venta es: " + getYear(mesMayor) + " , con un monto de " + mayor);
+        System.out.println("El mes de menor venta es: " + getYear(mesMenor) + " , con un monto de " + menor);
+        for(int i=0;i<TVxmes.length;i++)
+        {
+            if (TVxmes[i] > Promedio) {
+                contadorSuperiorPromedio++;
+            }
+        }
+        System.out.println("El total de meses que superan el promedio de ventas en el año es: " + contadorSuperiorPromedio);
+    }
+    public static void cursos(String nombreEstudiante[],double notaCursoABC[],double notaCursoXYZ[]){
+        double bajaNotaABC = notaCursoABC[0],mejorNotaABC=notaCursoABC[0],mejorNotaXYZ=notaCursoXYZ[0],notaAprobado = 12.9,aprobados=0,porcentajeAprobadosXYZ=0;
+        int indiceNombreBajaNotaABC = 0,indiceNombreMejorNotaABC=0,indiceNombreMejorNotaXYZ=0;
+        for(int i=0;i<notaCursoABC.length;i++)
+        {
+            if (notaCursoABC[i] < bajaNotaABC) {
+                bajaNotaABC = notaCursoABC[i];
+                indiceNombreBajaNotaABC= i;
+            }else if(notaCursoABC[i] > mejorNotaABC){
+                mejorNotaABC = notaCursoABC[i];
+                indiceNombreMejorNotaABC = i;
+            }
+        }
+        for(int k=0;k<notaCursoXYZ.length;k++){
+            if(notaCursoXYZ[k] > notaAprobado){
+                aprobados++;
+            }
+            if(notaCursoXYZ[k] > mejorNotaXYZ){
+                mejorNotaXYZ = notaCursoXYZ[k];
+                indiceNombreMejorNotaXYZ = k;
+            }
+
+        }
+        for(int j=0;j<nombreEstudiante.length;j++){
+
+            if(j==indiceNombreBajaNotaABC){
+                System.out.println("El Alumno con menor nota en el curso ABC es: "+nombreEstudiante[j] + ", con una nota de: "+bajaNotaABC);
+            }else if(j==indiceNombreMejorNotaABC){
+                System.out.println("El Alumno con mayor nota en el curso ABC es: "+nombreEstudiante[j] + ", con una nota de: "+mejorNotaABC);
+            }
+            if(j==indiceNombreMejorNotaXYZ){
+                System.out.println("El Alumno con mayor nota en el curso XYZ es: "+nombreEstudiante[j] + ", con una nota de: "+mejorNotaXYZ);
+            }
+
+        }
+
+        porcentajeAprobadosXYZ = (aprobados * 100 / notaCursoXYZ.length);
+        System.out.println("El porcentaje de aprobados del curso XYZ es:"+porcentajeAprobadosXYZ+"%" );
+    }
+    public static void main(String[] args) {
+        ventasTV(new double[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12});
+        cursos(new String[]{"Carla", "Rocio", "Fernando", "Alejandro", "Gabriel"}, new double[]{10, 16, 15, 10, 15},new double[]{15,10,10,10,18});
+    }

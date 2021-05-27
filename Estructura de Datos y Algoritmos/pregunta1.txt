@@ -1,0 +1,32 @@
+public static int sumadeelementosmayoresqueelultimo(int arreglo[]){
+        int suma = 0;
+        for (int i=0; i<arreglo.length; i++)
+            if(arreglo[i]>arreglo[arreglo.length-1]){
+                suma += arreglo[i];
+            }
+        return suma;
+    }
+    public static void intercambio(int []arreglo, int i, int j){
+        int temporal = arreglo[i];
+        arreglo[i] = arreglo[j];
+        arreglo[j] = temporal;
+    }
+    public static int[] descendenteordenamientoporselección(int[] arreglo){
+        int posMenor=0;
+        int i=0;
+        for (i=0; i<arreglo.length; i++){
+            posMenor = i;
+            for (int j=i+1; j< arreglo.length; j++){
+                if (arreglo[j]>arreglo[posMenor])
+                    posMenor = j;
+            }
+            intercambio(arreglo, i, posMenor);
+        }
+
+        return arreglo;
+    }
+public static void main(String[] args) {
+	int [] arreglo = {40, 50, 3, 7, 10, 13, 15};
+        System.out.println("Arreglo ordenado de forma descendente: "+ Arrays.toString(descendenteordenamientoporselección(arreglo)));
+        System.out.println("La suma de todos los elementos mayores que el último  del arreglo es: "+sumadeelementosmayoresqueelultimo(arreglo));
+}
