@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="801A15B7-129E-D299-852A-0309F0DD3AB9" name="ESPECIALIDAD">
+<createdBy>Intel</createdBy>
+<createdTime>2022-02-09 04:06:13 UTC</createdTime>
+<ownerDesignName>G2_TF_E22A</ownerDesignName>
+<importedID>D6F38CEC-469C-B7C5-A211-275990DFC3C5</importedID>
+<engineerTo>
+<item key="B46B0E09-DC3F-ACA6-B445-D83A2AC6A172" value="true"/>
+<item key="B9B736CC-ED98-F109-8330-E394C7F372BB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Co_Especialidad" id="77A876C4-88CB-53C2-14E5-A4278B0D2D47">
+<createdBy>Intel</createdBy>
+<createdTime>2022-02-09 04:06:13 UTC</createdTime>
+<ownerDesignName>G2_TF_E22A</ownerDesignName>
+<importedID>F909EC91-642A-F8E1-224D-344EB69CCE86</importedID>
+<engineerTo>
+<item key="B46B0E09-DC3F-ACA6-B445-D83A2AC6A172" value="true"/>
+<item key="B9B736CC-ED98-F109-8330-E394C7F372BB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="No_Especialidad" id="2FB5A6B3-9827-2DE1-253F-65ECE90B7AA4">
+<createdBy>Intel</createdBy>
+<createdTime>2022-02-09 04:06:13 UTC</createdTime>
+<ownerDesignName>G2_TF_E22A</ownerDesignName>
+<importedID>C73E34E9-80BA-354A-D7C0-B12904DE2691</importedID>
+<engineerTo>
+<item key="B46B0E09-DC3F-ACA6-B445-D83A2AC6A172" value="true"/>
+<item key="B9B736CC-ED98-F109-8330-E394C7F372BB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D9892316-2FEF-D3BF-6530-AA2C8F6A3617" name="ESPECIALIDAD PK">
+<createdBy>Intel</createdBy>
+<createdTime>2022-02-09 04:06:13 UTC</createdTime>
+<ownerDesignName>G2_TF_E22A</ownerDesignName>
+<importedID>A8DB4067-0947-40D3-B2D4-4DD1DA59A7D5</importedID>
+<engineerTo>
+<item key="B46B0E09-DC3F-ACA6-B445-D83A2AC6A172" value="true"/>
+<item key="B9B736CC-ED98-F109-8330-E394C7F372BB" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>77A876C4-88CB-53C2-14E5-A4278B0D2D47</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

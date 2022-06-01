@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_30" directorySegmentName="seg_0" id="DFD2397F-87F1-7469-6B15-4D0300086D7F">
+<createdBy>Intel</createdBy>
+<createdTime>2022-02-09 04:06:13 UTC</createdTime>
+<ownerDesignName>G2_TF_E22A</ownerDesignName>
+<importedID>3AA8E868-1E0A-34C9-0FFD-566C388E27D2</importedID>
+<engineerTo>
+<item key="B46B0E09-DC3F-ACA6-B445-D83A2AC6A172" value="true"/>
+<item key="B9B736CC-ED98-F109-8330-E394C7F372BB" value="true"/>
+</engineerTo>
+<sourcePk>96D323B3-EBEC-065E-AAE9-2CD4B22B80EA</sourcePk>
+<identifying>true</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>9FFEB447-A480-A5A4-301A-F811A8A52F17</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>B2397DEB-AD4F-E629-0637-F8BA419EB5E3</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

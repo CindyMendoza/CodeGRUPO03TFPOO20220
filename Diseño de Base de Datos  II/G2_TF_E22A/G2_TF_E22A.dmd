@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="G2_TF_E22A" id="FDCBBE52-12A9-5F73-E43A-640AC24DA15C" version="3.5">
+<createdBy>Intel</createdBy>
+<createdTime>2022-02-09 04:03:45 UTC</createdTime>
+<ownerDesignName>serviciosGenerales2</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>FDCBBE52-12A9-5F73-E43A-640AC24DA15C</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="35092D2F-7A0F-9020-F736-3533E1B57E1E">
+<designStoragePath>D:\Education\00. Ingenieria de sistemas\02. Segundo ciclo\Diseño de base de datos\Modelos\bd_modelado_sg\bd_modelado_servicios_generales</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

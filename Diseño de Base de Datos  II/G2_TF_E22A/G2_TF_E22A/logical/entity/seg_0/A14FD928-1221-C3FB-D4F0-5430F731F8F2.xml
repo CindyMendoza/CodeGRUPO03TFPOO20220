@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A14FD928-1221-C3FB-D4F0-5430F731F8F2" name="SOLICITUD_SERVICIO_MAESTRO_APRENDIZ">
+<createdBy>Intel</createdBy>
+<createdTime>2022-02-09 04:06:13 UTC</createdTime>
+<ownerDesignName>G2_TF_E22A</ownerDesignName>
+<importedID>F5070B0E-9910-6163-51EE-82AC20424073</importedID>
+<engineerTo>
+<item key="B46B0E09-DC3F-ACA6-B445-D83A2AC6A172" value="true"/>
+<item key="B9B736CC-ED98-F109-8330-E394C7F372BB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Co_Solicitud" id="6B3A22CC-3499-2023-6712-571D354D2D37">
+<createdBy>Intel</createdBy>
+<createdTime>2022-02-09 04:06:13 UTC</createdTime>
+<generatorID>45FE4650-746D-674B-150F-C17C372AB4DF</generatorID>
+<ownerDesignName>G2_TF_E22A</ownerDesignName>
+<importedID>DF704DF5-F15F-DB9F-8E03-05A9D6E6BFF7</importedID>
+<engineerTo>
+<item key="B46B0E09-DC3F-ACA6-B445-D83A2AC6A172" value="true"/>
+<item key="B9B736CC-ED98-F109-8330-E394C7F372BB" value="true"/>
+</engineerTo>
+<referedAttribute>FD9CFFFC-0896-A2A0-FEF9-9C91714B9B1C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Co_Servicio" id="A6B3A2FE-E101-D3CA-6860-B5A3D3BFFDC2">
+<createdBy>Intel</createdBy>
+<createdTime>2022-02-09 04:06:13 UTC</createdTime>
+<generatorID>F2DBA6F9-0A36-5E1D-4221-A10835C99D84</generatorID>
+<ownerDesignName>G2_TF_E22A</ownerDesignName>
+<importedID>6A766BA8-7289-FF0F-D4D8-A240FEA547A8</importedID>
+<engineerTo>
+<item key="B46B0E09-DC3F-ACA6-B445-D83A2AC6A172" value="true"/>
+<item key="B9B736CC-ED98-F109-8330-E394C7F372BB" value="true"/>
+</engineerTo>
+<referedAttribute>A9D8EAFD-E800-FA27-FFE0-19E891BAB53B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Co_Maestro" id="4B77BC8A-6EA8-B315-8BCD-A34037DC581F">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-02-11 18:41:03 UTC</createdTime>
+<generatorID>99BDDD32-18D2-C8F6-F0C5-6E8788DFE985</generatorID>
+<ownerDesignName>G2_TF_E22A</ownerDesignName>
+<engineerTo>
+<item key="B46B0E09-DC3F-ACA6-B445-D83A2AC6A172" value="true"/>
+<item key="B9B736CC-ED98-F109-8330-E394C7F372BB" value="true"/>
+</engineerTo>
+<referedAttribute>A30FA595-9D7C-08DE-CF42-21193968AB9F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Co_Aprendiz" id="C10C6771-C531-D5FE-F5D0-968ACD590EFC">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-02-11 18:43:49 UTC</createdTime>
+<generatorID>F9A848F1-7249-2C8E-E456-29B0226DB785</generatorID>
+<ownerDesignName>G2_TF_E22A</ownerDesignName>
+<engineerTo>
+<item key="B46B0E09-DC3F-ACA6-B445-D83A2AC6A172" value="true"/>
+<item key="B9B736CC-ED98-F109-8330-E394C7F372BB" value="true"/>
+</engineerTo>
+<referedAttribute>A30FA595-9D7C-08DE-CF42-21193968AB9F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3CA2C318-1724-BAA4-3C5F-59F0130EDB67" name="SOLICITUD_SERVICIO_MAESTRO_APRENDIZ PK">
+<createdBy>Intel</createdBy>
+<createdTime>2022-02-09 04:06:13 UTC</createdTime>
+<ownerDesignName>G2_TF_E22A</ownerDesignName>
+<importedID>6BA63D61-EAFE-E8FB-3A29-1783E19AE362</importedID>
+<engineerTo>
+<item key="B46B0E09-DC3F-ACA6-B445-D83A2AC6A172" value="true"/>
+<item key="B9B736CC-ED98-F109-8330-E394C7F372BB" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6B3A22CC-3499-2023-6712-571D354D2D37</attributeRef>
+<attributeRef>A6B3A2FE-E101-D3CA-6860-B5A3D3BFFDC2</attributeRef>
+<attributeRef>4B77BC8A-6EA8-B315-8BCD-A34037DC581F</attributeRef>
+<attributeRef>C10C6771-C531-D5FE-F5D0-968ACD590EFC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

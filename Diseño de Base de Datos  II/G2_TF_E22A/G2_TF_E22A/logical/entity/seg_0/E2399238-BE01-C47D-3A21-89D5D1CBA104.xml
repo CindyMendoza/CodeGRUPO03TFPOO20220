@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E2399238-BE01-C47D-3A21-89D5D1CBA104" name="INFORME POR SERVICIO">
+<createdBy>Intel</createdBy>
+<createdTime>2022-02-09 04:06:13 UTC</createdTime>
+<ownerDesignName>G2_TF_E22A</ownerDesignName>
+<importedID>B3AD2104-F3BF-2C29-3F9D-2454AD8A9F78</importedID>
+<engineerTo>
+<item key="B46B0E09-DC3F-ACA6-B445-D83A2AC6A172" value="true"/>
+<item key="B9B736CC-ED98-F109-8330-E394C7F372BB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Co_Solicitud" id="49F9A4D3-7C22-5AE3-6B76-66798DE65184">
+<createdBy>Intel</createdBy>
+<createdTime>2022-02-09 04:06:13 UTC</createdTime>
+<generatorID>B73EA99B-3244-C1A7-8FFB-153D1ED8C311</generatorID>
+<ownerDesignName>G2_TF_E22A</ownerDesignName>
+<importedID>91517CA1-FE3E-511A-494D-71F937D9AC3A</importedID>
+<engineerTo>
+<item key="B46B0E09-DC3F-ACA6-B445-D83A2AC6A172" value="true"/>
+<item key="B9B736CC-ED98-F109-8330-E394C7F372BB" value="true"/>
+</engineerTo>
+<referedAttribute>FD9CFFFC-0896-A2A0-FEF9-9C91714B9B1C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Co_Servicio" id="3C870D6D-462D-4E02-667C-27880990A837">
+<createdBy>Intel</createdBy>
+<createdTime>2022-02-09 04:06:13 UTC</createdTime>
+<generatorID>5E5E8C3F-417B-4C2E-1864-6ABE40EE9512</generatorID>
+<ownerDesignName>G2_TF_E22A</ownerDesignName>
+<importedID>D7021402-F336-1555-32C0-2F3BA3ECBAF6</importedID>
+<engineerTo>
+<item key="B46B0E09-DC3F-ACA6-B445-D83A2AC6A172" value="true"/>
+<item key="B9B736CC-ED98-F109-8330-E394C7F372BB" value="true"/>
+</engineerTo>
+<referedAttribute>4A1AB959-2358-E402-5FA0-9CFFB26FBE52</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Co_Tarea" id="27AD18C9-7B88-27DA-B6D7-A4602B9838D3">
+<createdBy>Intel</createdBy>
+<createdTime>2022-02-09 04:06:13 UTC</createdTime>
+<generatorID>5E5E8C3F-417B-4C2E-1864-6ABE40EE9512</generatorID>
+<ownerDesignName>G2_TF_E22A</ownerDesignName>
+<importedID>437BAAF3-930B-27C2-85B4-3F796EBF26E5</importedID>
+<engineerTo>
+<item key="B46B0E09-DC3F-ACA6-B445-D83A2AC6A172" value="true"/>
+<item key="B9B736CC-ED98-F109-8330-E394C7F372BB" value="true"/>
+</engineerTo>
+<referedAttribute>D8FE9F62-5CCE-AAD3-6E70-CACEF491BB8E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Qt_TiempoTarea" id="CD77BAFE-74FE-6C6E-05F5-36052FC2B518">
+<createdBy>Intel</createdBy>
+<createdTime>2022-02-09 04:06:13 UTC</createdTime>
+<ownerDesignName>G2_TF_E22A</ownerDesignName>
+<importedID>EDEC62AE-EE53-7BD9-6FCB-658A26B6A065</importedID>
+<engineerTo>
+<item key="B46B0E09-DC3F-ACA6-B445-D83A2AC6A172" value="true"/>
+<item key="B9B736CC-ED98-F109-8330-E394C7F372BB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Tx_Descripcion_Tarea" id="667F373D-F1BB-09E2-5663-53CDCA5F02B8">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-02-11 20:00:30 UTC</createdTime>
+<ownerDesignName>G2_TF_E22A</ownerDesignName>
+<engineerTo>
+<item key="B46B0E09-DC3F-ACA6-B445-D83A2AC6A172" value="true"/>
+<item key="B9B736CC-ED98-F109-8330-E394C7F372BB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E9A0973D-D3A2-D7F5-BC91-96C6D853AB83" name="TIEMPO DE TAREA POR SOLICITUD PK">
+<createdBy>Intel</createdBy>
+<createdTime>2022-02-09 04:06:13 UTC</createdTime>
+<ownerDesignName>G2_TF_E22A</ownerDesignName>
+<importedID>012C3374-4404-EB9D-C15C-BF5BE3373792</importedID>
+<engineerTo>
+<item key="B46B0E09-DC3F-ACA6-B445-D83A2AC6A172" value="true"/>
+<item key="B9B736CC-ED98-F109-8330-E394C7F372BB" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>27AD18C9-7B88-27DA-B6D7-A4602B9838D3</attributeRef>
+<attributeRef>3C870D6D-462D-4E02-667C-27880990A837</attributeRef>
+<attributeRef>49F9A4D3-7C22-5AE3-6B76-66798DE65184</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
